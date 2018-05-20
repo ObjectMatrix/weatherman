@@ -114,42 +114,39 @@ fetchURL = (location) => {
     return (
       
       <div className="App">
-      <div>
-            <input
-            value={this.state.place}  
-            placeholder={"City, Country"} 
-            onChange={this.changePlace }
-            type="text" 
-            />
-            <Button text="Fetch" onClick={this.fetchData} />
+        <div>
+              <input
+              value={this.state.place}  
+              placeholder={"City, Country"} 
+              onChange={this.changePlace }
+              type="text" 
+              />
+              <Button text="Fetch" onClick={this.fetchData} />
         </div>
 
-        <p className="temp-wrapper">
-          <span className="temp">{ currentTemp}</span>
-          <span className="temp-symbol">°F</span>
-
-        <p className="desc">
-          Max Temp: {tMax}F  Min: {tMin}F  humidity: {humidity}%
-        </p>
-
-        </p>
-
-
-        <div>
-        <Plot
-        data={[
-          {
-            x: this.state.dates,
-            y: this.state.temps,
-            type: 'scatter',
-            mode: 'lines+points',
-            marker: {color: 'green'},
-          },
-          { type: 'bar', x: this.state.dates, y: this.state.temps },
-        ]}
-        layout={ {width: 620, height: 440, title: 'Weatherman'} }
-      />
-      </div>
+          <p className="temp-wrapper">
+          <p>
+            <span className="temp">{ currentTemp}</span>
+            <span className="temp-symbol">°F</span>
+            </p>
+            <p className="desc">
+              Max Temp: {tMax}F  Min: {tMin}F  humidity: {humidity}%
+            </p>
+          </p>
+          <div>
+          <Plot
+          data={[
+            {
+              x: this.state.dates,
+              y: this.state.temps,
+              type: 'scatter',
+              mode: 'lines+points',
+              marker: {color: 'green'},
+            },
+            { type: 'bar', x: this.state.dates, y: this.state.temps },
+          ]}
+          layout={ {width: 620, height: 440, title: 'Weatherman'} } />
+        </div>
       </div>
     );
   }
