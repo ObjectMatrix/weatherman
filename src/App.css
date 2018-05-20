@@ -19,7 +19,9 @@ input {
   font-size: 1em;
   outline: none;
 }
-
+.desc {
+margin: 0 0;
+}
 .wrapper {
   max-width: 680px;
   margin: 0 auto;

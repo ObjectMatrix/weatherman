@@ -127,10 +127,13 @@ fetchURL = (location) => {
         <p className="temp-wrapper">
           <span className="temp">{ currentTemp}</span>
           <span className="temp-symbol">°F</span>
-        </p>
+
         <p className="desc">
-        Max Temp: {tMax}F  Min: {tMin}F  humidity: {humidity}%
+          Max Temp: {tMax}F  Min: {tMin}F  humidity: {humidity}%
         </p>
+
+        </p>
+
 
         <div>
         <Plot
