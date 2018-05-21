@@ -1,4 +1,8 @@
 Weatherman App
+
+### REACT-REDUX
+React weather data plot application 
+
 ### HOWTO
 * clone `git clone https://github.com/ObjectMatrix/weatherman`  
 * `npm install`  
